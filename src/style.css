@@ -17,3 +17,15 @@ ul {
   margin: 0;
   padding: 0;
 }
+
+.weather-temp strong {
+  font-size: 65px;
+  line-height: 1;
+  font-weight: 400;
+}
+
+.weather-temp small {
+  position: relative;
+  font-size: 16px;
+  top: -34px;
+}
