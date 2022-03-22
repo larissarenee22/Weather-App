@@ -42,3 +42,17 @@ ul {
 body {
   background-color: azure;
 }
+
+.weather-forecast {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.max {
+  font-size: 13px;
+}
+
+.min {
+  font-size: 13px;
+  opacity: 0.6;
+}
