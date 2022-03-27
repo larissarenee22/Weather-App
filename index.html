@@ -14,64 +14,65 @@
     <link rel="stylesheet" href="src/style.css" />
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
-
     <title>Weather</title>
   </head>
   <body>
     <div class="container">
       <div class="weather-app-wrapper">
-          <div class="weather-app">
-              <form id="search-form" class="mb-2">
-                  <div class="row">
-                      <div class="col-9">
-                  <input type="search" placeholder="Type a city..." class="form-control" id="city-input" autocomplete="off"/>
-                      </div>
-                      <div class="col-3">
-                  <input type="submit" value="Search" class="btn btn-primary w-100"/>
-                      </div>
-                  </div>
-              </form>
-    <h1 id="city">New York</h1>
-    <ul>
-      <li>Last updated: <span id="date">Friday 05:00</span></li>
-      <li id="description">Clear</li>
-    </ul>
-    <div class="row">
-      <div class="col-8">
-        <img
-          src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
-          alt="Clear"
-          class="float-left"
-          id="icon"
-        />
-        <div class="weather-temp"><strong id="temperature">12</strong><small>°C </small></div>
-      </div>
-      <div class="col-8">
-        <ul>
-          <li>Humidity: <span id="humidity">73</span>%</li>
-          <li>Wind: <span id="wind">2</span> km/h</li>
-        </ul>
-      </div>
-    </div>
-    <div class="weather-forecast">
-        <div class="row">
-            <div class="col-2">
-                <div class="weather-forecast-date>">Tue</div>
-                <img src="https://ssl.gstatic.com/onebox/weather/48/partly_cloudy.png" alt="" width="40"/>
-                <span class="max">18°</span> <span class="min">12°</span></div>
-
-        </div>
-
-    </div>
-  
+        <div class="weather-app">
+          <form id="search-form" class="mb-2">
+            <div class="row">
+              <div class="col-9">
+                <input
+                  type="search"
+                  placeholder="Type a city..."
+                  class="form-control"
+                  id="city-input"
+                  autocomplete="off"
+                />
+              </div>
+              <div class="col-3">
+                <input
+                  type="submit"
+                  value="Search"
+                  class="btn btn-primary w-100"
+                />
+              </div>
+            </div>
+          </form>
+          <h1 id="city">New York</h1>
+          <ul>
+            <li>Last updated: <span id="date">Friday 05:00</span></li>
+            <li id="description">Clear</li>
+          </ul>
+          <div class="row">
+            <div class="col-6">
+              <img
+                src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
+                alt="Clear"
+                class="float-left"
+                id="icon"
+              />
+              <div class="weather-temp">
+                <strong id="temperature">12</strong><small>°C </small>
+              </div>
+            </div>
+            <div class="col-6">
+            <ul>
+              <li>Humidity: <span id="humidity">73</span>%</li>
+              <li>Wind: <span id="wind">2</span> km/h</li>
+            </ul>
           </div>
-           <small>
-      <a href="https://github.com/larissarenee22/Weather-App" target="_blank">
-        Open-source code,</a
-      >
-      by Larissa Ford
-    </small>
+        </div>
+        <div class="weather-forecast" id="forecast"></div>
       </div>
+      <small>
+        <a href="https://github.com/larissarenee22/Weather-App" target="_blank">
+          Open-source code,</a
+        >
+        by Larissa Ford
+      </small>
+    </div>
   </body>
   <script src="src/app.js"></script>
 </html>
