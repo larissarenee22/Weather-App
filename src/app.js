@@ -47,7 +47,7 @@ function displayForecast(response) {
                 }@2x.png" alt="" width="40"/>
                 <span class="max">${Math.round(
                   forecastDay.temp.max
-                )}</span> <span class="min">${Math.round(
+                )}°</span> <span class="min">${Math.round(
           forecastDay.temp.min
         )}°</span></div>
 
@@ -61,7 +61,7 @@ function displayForecast(response) {
 
 function getForecast(coordinates) {
   let apiKey = "45228cead4cd07184e0658264e6106da";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
+  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=imperial`;
   axios.get(apiUrl).then(displayForecast);
 }
 
@@ -91,7 +91,7 @@ function displayTemperature(response) {
 
 function search(city) {
   let apiKey = "45228cead4cd07184e0658264e6106da";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
 
   axios.get(apiUrl).then(displayTemperature);
 }
